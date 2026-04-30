@@ -15,28 +15,5 @@ Bu depo, sabit kanatlı UAV sistemleri için otonom uçuş ve seviye iniş algor
 * **Haberleşme:** MAVROS 
 * **Dil:** Python rclpy
 
-## ⚙️ Nasıl Çalıştırılır?
-
-Projeyi simülasyon ortamında test etmek için 3 farklı terminal sekmesinde sırasıyla şu adımları izleyin:
-
-**1. Simülasyonu Başlatın:**
-
-Gazebo ortamında sabit kanatlı aracı (plane) ayağa kaldırmak için PX4 dizininde şu komutu çalıştırın:
-```bash
-make px4_sitl gazebo_plane
-```
-
-2. Haberleşme Köprüsünü (MAVROS) Açın:
-Sistemin PX4 ile ROS 2 arasında konuşabilmesi için MAVROS düğümünü başlatın:
-Bash
-```bash
-ros2 launch mavros px4.launch
-```
-
-3. İniş Algoritmasını Çalıştırın:
-Gilirsiniz:
-```bash
-python3 attitude_landing.py
-```
 
 *Bu proje, otonom hava araçları kontrol sistemleri üzerine yapılan robotik stajı kapsamında geliştirilmiştir.*
